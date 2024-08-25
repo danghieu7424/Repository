@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video list</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+
+</head>
+
+<body>
+    <header class="taskbar">
+        <div class="insideTaskbar">
+            <div class="logo">
+                <a class="logo__link" id="home" href="/" title="Trang chủ video list" style="display: none;"></a>
+                <label for="home" onclick="document.getElementById('home').click();">
+                    <svg width="36" height="36" viewBox="0 0 24 24" style="fill: var(--text-color)">
+                        <path d="M4 8H2v12a2 2 0 0 0 2 2h12v-2H4z"></path>
+                        <path d="M20 2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-9 12V6l7 4z">
+                        </path>
+                    </svg>
+                </label>
+            </div>
+
+            <div class="avatarButton">
+                <img class="avatar" onerror="this.src = './src/image/avatar.jpg'" src="">
+                <div class="contentWrapper">
+                    <header class="accountInfo">
+                        <div class="image">
+                            <img class="avt" onerror="this.src = './src/image/avatar.jpg'" src="">
+                        </div>
+                        <span class="info"></span>
+                    </header>
+                    <div class="container">
+                        <div class="sectionsAccount"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <datalist class="playList"></datalist>
+    <div class="overlay--videoURL"></div>
+
+    <!-- <script src="./src/videoListJson.js"></script> -->
+    <script src="./src/main.js" type="module"></script>
+</body>
+
+</html>
